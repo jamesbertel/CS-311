@@ -1,0 +1,169 @@
+Script started on Sat 27 Apr 2019 08:06:06 PM PDT
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW8[?1034h[berte005@empress forHW8]$ ex/cs/recordhw test.tx[9Prm ,test.tx[1Ptest.t/cs/recordhg++ elem.cpp htable.cpp hw8client.cpp llist.cpp slist.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[g++ elem.cpp htable.cpp hw8client.cpp llist.cpp slist.cpp
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW8[berte005@empress forHW8]$ ./a.out
+
+Enter a key to add to the table: 200
+
+Enter a name for the key: john
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 237
+
+Enter a name for the key: jeremy
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 201
+
+Enter a name for the key: steve
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 238
+
+Enter a name for the key: nancy
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 100
+
+Enter a name for the key: rika
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 101
+
+Enter a name for the key: mary
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 37
+
+Enter a name for the key: kyle
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 0
+
+Enter a name for the key: mo
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 199
+
+Enter a name for the key: danni
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 10210
+
+Enter a name for the key: andy
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 231
+
+Enter a name for the key: justin
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 52
+
+Enter a name for the key: lemyra
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 15
+
+Enter a name for the key: leandre
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 344
+
+Enter a name for the key: crryann
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 210
+
+Enter a name for the key: stacey
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 696
+
+Enter a name for the key: nathan
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 47
+
+Enter a name for the key: geronimo
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 48
+
+Enter a name for the key: stilton
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 9
+
+Enter a name for the key: grabrigabriel
+Enter 0 to stop adding elements, or enter 1 to continue: 1
+
+Enter a key to add to the table: 2020
+
+Enter a name for the key: lara
+Enter 0 to stop adding elements, or enter 1 to continue: 0
+0:[ 37+kyle 0+mo ]
+1:[empty]
+2:[empty]
+3:[empty]
+4:[empty]
+5:[empty]
+6:[empty]
+7:[empty]
+8:[empty]
+9:[ 231+justin 9+gabriel ]
+10:[ 47+geronimo ]
+11:[ 344+ryann 48+stilton ]
+12:[empty]
+13:[empty]
+14:[ 199+danni ]
+15:[ 200+john 237+jeremy 52+myra 15+leandre ]
+16:[ 201+steve 238+nancy ]
+17:[empty]
+18:[empty]
+19:[empty]
+20:[empty]
+21:[empty]
+22:[ 2020+lara ]
+23:[empty]
+24:[empty]
+25:[ 210+andy 210+stacey ]
+26:[ 100+rika ]
+27:[ 101+mary ]
+28:[empty]
+29:[empty]
+30:[ 696+nathan ]
+31:[empty]
+32:[empty]
+33:[empty]
+34:[empty]
+35:[empty]
+36:[empty]
+Look for? 0
+Found 0: 0+mo
+Enter 0 to stop add elements, or enter 1 to continue: 1
+Look for? 37
+Found 37: 37+kyle
+Enter 0 to stop add elements, or enter 1 to continue: 1
+Look for? 200
+Found 200: 200+john
+Enter 0 to stop add elements, or enter 1 to continue: 1
+Look for? 52
+Found 52: 52+myra
+Enter 0 to stop add elements, or enter 1 to continue: 1
+Look for? 20
+20 not found.
+Enter 0 to stop add elements, or enter 1 to continue: 1
+Look for? 695
+695 not found.
+Enter 0 to stop add elements, or enter 1 to continue: 1
+Look for? 696
+Found 696: 696+nathan
+Enter 0 to stop add elements, or enter 1 to continue: 1
+Look for? 36
+36 not found.
+Enter 0 to stop add elements, or enter 1 to continue: 0
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW8[berte005@empress forHW8]$ ^C
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW8[berte005@empress forHW8]$ exit
+exit
+
+Script done on Sat 27 Apr 2019 08:13:33 PM PDT

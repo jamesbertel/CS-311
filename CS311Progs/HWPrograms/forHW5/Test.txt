@@ -1,0 +1,33 @@
+Script started on Sat 23 Mar 2019 08:21:40 PM PDT
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW5[?1034h[berte005@empress forHW5]$ ex./a.oug++ testclient.cpp pqueue.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[g++ testclient.cpp pqueue.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[g++ testclient.cpp pqueue.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pemacs testclient.c[2Ppqclient.ctestclient.clscp pqclient.cpp testclient.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clscp pqclient.cpp testclient.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clsemacs testclient.c[2Ppqclient.ctestclient.cg++ testclient.cpp pqueue.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[g++ testclient.cpp pqueue.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./a.out[[3Pex[Kg++ pqclient.cpp pqueue.cpp[K
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW5[berte005@empress forHW5]$ ./a.out
+Adding: 20
+Adding: 12
+Jobs: 12 20 
+Adding: 30
+Adding: 1
+Jobs: 1 12 30 20 
+Adding: 5
+Adding: 6
+Adding: 7
+Adding: 8
+Adding: 9
+Adding: 10
+Adding: 11
+Jobs: 1 5 6 8 10 30 7 20 9 12 11 
+printing: 1
+Jobs: 5 8 6 9 10 30 7 20 11 12 
+printing: 5
+Jobs: 6 8 7 9 10 30 12 20 11 
+printing: 6
+Jobs: 7 8 11 9 10 30 12 20 
+printing: 7
+Jobs: 8 9 11 11 10 30 12 
+Adding: 2
+Jobs: 2 8 11 9 10 30 12 11 
+Adding: 3
+Jobs: 2 3 11 8 10 30 12 11 9 
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW5[berte005@empress forHW5]$ exit
+exit
+
+Script done on Sat 23 Mar 2019 08:22:02 PM PDT

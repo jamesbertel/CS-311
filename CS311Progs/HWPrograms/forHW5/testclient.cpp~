@@ -1,0 +1,21 @@
+// CS311 Yoshii HW5 client to test the Pqueue
+// Use as is!
+
+#include "pqueue.h"
+
+int main()
+{
+  pqueue Jobs;
+
+  Jobs.
+
+  Jobs.displayAll();
+
+  Jobs.displayAll();
+
+  Jobs.displayAll();
+
+  Jobs.displayAll();
+
+  Jobs.displayAll();
+}  

@@ -1,0 +1,267 @@
+Script started on Sat 02 Feb 2019 06:20:41 PM PST
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[?1034h[berte005@empress HW1P1_stack]$ g++ client1.cpp stack.cpp
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 34+
+STACK
+3
+--------------
+STACK
+4
+3
+--------------
+STACK
+7
+--------------
+The result is:
+7
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 345+*
+STACK
+3
+--------------
+STACK
+4
+3
+--------------
+STACK
+5
+4
+3
+--------------
+STACK
+9
+3
+--------------
+STACK
+27
+--------------
+The result is:
+27
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 722+-
+STACK
+7
+--------------
+STACK
+2
+7
+--------------
+STACK
+2
+2
+7
+--------------
+STACK
+4
+7
+--------------
+STACK
+3
+--------------
+The result is:
+3
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 34+56++
+STACK
+3
+--------------
+STACK
+4
+3
+--------------
+STACK
+7
+--------------
+STACK
+5
+7
+--------------
+STACK
+6
+5
+7
+--------------
+STACK
+11
+7
+--------------
+STACK
+18
+--------------
+The result is:
+18
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 12+34*45+-+
+STACK
+1
+--------------
+STACK
+2
+1
+--------------
+STACK
+3
+--------------
+STACK
+3
+3
+--------------
+STACK
+4
+3
+3
+--------------
+STACK
+12
+3
+--------------
+STACK
+4
+12
+3
+--------------
+STACK
+5
+4
+12
+3
+--------------
+STACK
+9
+12
+3
+--------------
+STACK
+3
+3
+--------------
+STACK
+6
+--------------
+The result is:
+6
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 1234567891234
+STACK
+1
+--------------
+STACK
+2
+1
+--------------
+STACK
+3
+2
+1
+--------------
+STACK
+4
+3
+2
+1
+--------------
+STACK
+5
+4
+3
+2
+1
+--------------
+STACK
+6
+5
+4
+3
+2
+1
+--------------
+STACK
+7
+6
+5
+4
+3
+2
+1
+--------------
+STACK
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+STACK
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+STACK
+1
+9
+8
+7
+6
+5
+4
+3
+2
+1
+--------------
+Overflow. Too many operands.
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: +
+Underflow. Too few operands.
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 3+
+STACK
+3
+--------------
+Underflow. Too few operands.
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 3#
+STACK
+3
+--------------
+Invalid items detected.
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ ./a.out
+type a postfix expression: 2345+
+STACK
+2
+--------------
+STACK
+3
+2
+--------------
+STACK
+4
+3
+2
+--------------
+STACK
+5
+4
+3
+2
+--------------
+STACK
+9
+3
+2
+--------------
+The result is:
+9
+Incomplete expression found.
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P1_stack[berte005@empress HW1P1_stack]$ exit
+exit
+
+Script done on Sat 02 Feb 2019 06:23:00 PM PST

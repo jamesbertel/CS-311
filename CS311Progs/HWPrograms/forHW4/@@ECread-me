@@ -1,0 +1,45 @@
+// Complete and Add this utility function to HW4 for EC 
+
+// Climbs up from the vertex to compute Height and Balance Factor
+// of all ancestors and displays them as they are computed.
+// This should be called whenever a vertex (N) is inserted
+// This should called whenever a vertex is deleted (i.e. delete V)
+void BST::climbup(Vertex* V)
+{
+  cout << "...Start climbing up to adjust heights ......" << endl;
+  while (V != NULL)
+    {
+      // ** compute V->Height  based on the left/right children
+      // ** compute V->Balance based on the left/right children 
+      cout << "..." << V->Elem << "'s height: "
+           << V->Height << " with balance: " 
+       	   << V->Balance << endl;
+      // ** go up to the parent
+    }
+}  
+
+Compile with hw4client.cpp and test it.
+
+Run bstEC.out to check the correct output.
+
+-- Rotation EC --------------------
+
+Note that rotated.out shows what happens if you rotate the tree
+everytime Balance -2 or 2 is found and the tree is displayed
+as soon as the rotation is completed.
+
+You do not have to do this for the EC but if you did, 
+you can get +15 pts instead of 5pts.
+
+Hint: I called fixIt from climbUp whenever 2 or -2
+      was found
+      and fixIt called the correct
+      rotation routine(s) based on its BF and the BF of
+      a sub-tree.
+      And then Display in Inorder.
+
+
+ 
+
+
+

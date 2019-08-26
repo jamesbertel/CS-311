@@ -1,0 +1,87 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+//--------------------------------------------
+//CS311 HW2P2 Combine 
+//Name: James
+//Compiler: g++
+//--------------------------------------------
+
+// combine two sorted lists A and B into R
+// displays comparison every time it is done
+void combine( vector<int> A, vector<int> B, vector<int> &R )
+{
+  int ia = 0; //index for A
+  int ib = 0; //index for B
+
+  //loop until you run out of elements for A or run out of elements in B
+  while(ia < A.size() && ib < B.size())
+    {
+      cout << "comparison" << endl;
+
+
+      //if A element is less than B element,
+      //put A element into R
+      if (A[ia] < B[ib])
+	{
+	  R.push_back(A[ia]);
+	  ia++; 
+	}
+
+      //if A element is greater than or equal to B element
+      //put B element into R
+      else //A[ia] >= B[ib]
+	{
+	  R.push_back(B[ib]);
+	  ib++; 
+	}
+    }
+
+  //variable to tell which vector will have its remaining elemnts go into R
+  string remainder;
+	  
+  if(ia < A.size()) //if any elements in A still remain
+    for(ia; ia <= A.size(); ia++)
+      {
+	R.push_back(A[ia]);
+	remainder = "first";
+      }
+
+  else //if any elements in B still remain
+    for(ib; ib <= B.size(); ib++)
+      {
+	R.push_back(B[ib]);
+	remainder = "second";
+      }
+
+  cout << "The rest of the " << remainder << " one goes down" << endl;
+}
+
+int main()
+{  
+  vector<int> L1;
+  vector<int> L2;
+  vector<int> L3;
+  int N;  // how many elements in each of L1 and L2
+  int e;  // for each element
+
+  cout << "How many elements per sublist?" << endl;
+  cin >> N;
+
+  cout << "List1:"  << endl;
+  for (int i = 1; i <=N; i++)
+    { cout << "element: "; cin >> e; L1.push_back(e);} 
+
+  cout << "List2:"  << endl; 
+  for (int i = 1; i <=N; i++)
+    { cout << "element: "; cin >> e; L2.push_back(e);} 
+
+  // call combine here to combine L1 and L2 into L3
+  combine(L1, L2, L3);
+  
+  cout << "The result is: ";
+  for (int i = 0; i < N*2; i++)
+    { cout << L3[i]; } cout << endl;
+
+}// end of main

@@ -1,0 +1,59 @@
+Script started on Fri 08 Feb 2019 04:54:31 PM PST
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P2_queue[?1034h[berte005@empress HW1P2_queue]$ g++ queue.cpp client2.cpp
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P2_queue[berte005@empress HW1P2_queue]$ ./a.out
+[ A 
+B 
+C 
+AA 
+AB 
+AC 
+BA 
+BB 
+BC 
+CA 
+CB 
+CC 
+AAA 
+AAB 
+AAC 
+ABA 
+ABB 
+ABC 
+ACA 
+ACB 
+ACC 
+BAA 
+BAB 
+BAC 
+BBA 
+BBB 
+BBC 
+BCA 
+BCB 
+BCC 
+CAA 
+CAB 
+CAC 
+CBA 
+CBB 
+CBC 
+CCA 
+CCB 
+CCC 
+AAAA 
+AAAB 
+AAAC 
+AABA 
+AABB 
+AABC 
+AACA 
+AACB 
+AACC 
+ABAA 
+ABAB 
+]
+Overflow. Too many strings.
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW1/HW1P2_queue[berte005@empress HW1P2_queue]$ exit
+exit
+
+Script done on Fri 08 Feb 2019 04:54:47 PM PST

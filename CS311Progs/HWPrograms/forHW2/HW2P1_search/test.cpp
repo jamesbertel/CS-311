@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+const int SIZE = 5;
+
+int main()
+{
+
+  int A[SIZE];
+  int e;
+
+  A[0]= 1; A[1]= 3; A[2]= 5; A[3]= 7; A[4]= 9;
+  A[5]=11; A[6]=13; A[7]=15; A[8]=17; A[9]=19;
+
+  cout << "What do you want to look for? ";
+  cin >> e;
+
+  int first = A[0];
+  int last = A[9];
+
+  cout << first << " " << last << endl;
+
+
+  int middle = int((first+last)/2);
+  int middel = (first+last);
+
+  cout << middel << " " << (middel/2) << endl;
+
+  return 0;
+}

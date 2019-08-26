@@ -1,0 +1,32 @@
+// CS311 This client tests the BST class - by Yoshii - DO NOT CHANGE!!
+//-------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+#include "binstree.h"
+
+// This client tests all kinds of cases.
+// But the input data is hard coded.
+// For BST to be useful, the data should come from a file. 
+int main()
+{
+  //***** test 1 **********************************************
+
+  cout << "===  Starting a new tree with many nodes ===="<< endl;
+  BST MyTree;  // my first binary search tree
+
+  MyTree.InsertVertex(5);
+  MyTree.InsertVertex(3);
+  MyTree.InsertVertex(6);
+  MyTree.InsertVertex(2);
+  MyTree.InsertVertex(4);
+  
+
+
+  MyTree.Display();  // should show in the sorted order
+  
+
+
+
+  return 0;
+}

@@ -1,0 +1,165 @@
+Script started on Wed 10 Apr 2019 12:02:55 PM PDT
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW6[?1034h[berte005@empress forHW6]$ ex./a.oug++ hw6client.cpp dgraph.cpp llist.cpp slist.cpp
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW6[berte005@empress forHW6]$ ./a.out
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+A 2 [ B F ]
+B 2 [ C G ]
+C 1 [ H ]
+D 0 
+E 0 
+F 2 [ I E ]
+G 0 
+H 2 [ G I ]
+I 3 [ A G E ]
+
+Enter vertex: A
+The degree is: 2
+
+OPTIONS:
+1. Quit
+2. Search for the degree of another vertex
+3. Search for the adjacents of another vertex
+Choose an option: 2
+
+Enter vertex: A
+The degree is: 2
+
+OPTIONS:
+1. Quit
+2. Search for the degree of another vertex
+3. Search for the adjacents of another vertex
+Choose an option: 2
+
+Enter vertex: E
+The degree is: 0
+
+OPTIONS:
+1. Quit
+2. Search for the degree of another vertex
+3. Search for the adjacents of another vertex
+Choose an option: 2
+
+Enter vertex: f
+ERROR: The vertex does not exist!
+OPTIONS:
+1. Quit
+2. Search for the degree of another vertex
+3. Search for the adjacents of another vertex
+Choose an option: 3
+
+Enter vertex: A
+calling the llist destructor
+destructor function finished...
+The  adjacents are: [ B F ]
+
+OPTIONS:
+1. Quit
+2. Search for the degree of another vertex
+3. Search for the adjacents of another vertex
+Choose an option: 3
+
+Enter vertex: D
+calling the llist destructor
+destructor function finished...
+The  adjacents are: 
+
+OPTIONS:
+1. Quit
+2. Search for the degree of another vertex
+3. Search for the adjacents of another vertex
+Choose an option: 3
+
+Enter vertex: f
+ERROR: The vertex does not exist!
+OPTIONS:
+1. Quit
+2. Search for the degree of another vertex
+3. Search for the adjacents of another vertex
+Choose an option: 1
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW6[berte005@empress forHW6]$ exit
+exit
+
+Script done on Wed 10 Apr 2019 12:03:28 PM PDT

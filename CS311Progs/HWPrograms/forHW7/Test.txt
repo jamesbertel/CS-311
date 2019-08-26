@@ -1,0 +1,123 @@
+Script started on Fri 19 Apr 2019 10:23:25 PM PDT
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW7[?1034h[berte005@empress forHW7]$ logoemacs dgraph.c[1Pllist.cpdgraph.chw7client.cp[5Pdgraphhw7client.cp[3Pdgraph.cp[2Pcp[2Pc[10Plogoemacs hw7client.cp[3Pdgraph.chw7client.cp[4Pstack.cphw7client.cp[4Pstack.cphw7client.cp[4Pllist.cp[2Pslist.cp[1Pdgraph.cp[2Pc[1Pstack.cpdgraph.ccd CS311Progs/HWPrograms/forHW7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogoutcd CS311Progs/HWPrograms/forHW7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogoutcd CS311Progs/HWPrograms/forHW7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogoutemacs hw7client.cpls -B[cd CS311Progs/HWPrograms/forHW7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogoutemacs slist.cp[2Pllist.cpslist.cp[2Pllist.slist.hw6client.cpls -B[emacs hw6client.cpls -B[cd CS311Progs/HWPrograms/forHW7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[K -emacs hw6client.cp[6Pslist.llist.slist.cpllist.cp[2Pslist.cp[9Plogocd CS311Progs/HWPrograms/forHW7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls -B[emacs hw7client.cplogoutcd CS311Progs/HWPrograms/forHW7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Clogoutcd CS311Progs/HWPrograms/forHW7[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[15Pemacs dgraph.c[1Pstack.cpdgraph.cp[2Pcp[2slist.cp[2Pllist.cphw7client.cp[4Pstack.cphw7client.cp[4Pstack.cphw7client.cp[3Pdgraph.chw7client.cplogoutemacs dgraph.cp[2Pcp[2Pchw7client.cp[5Pdgraphhw7client.cp[3Pdgraph.c[1Pllist.cpdgraph.c[10Plogo[Klogoemacs dgraph.c[1Pllist.cpdgraph.chw7client.cp[5Pdgraphhw7client.cp[3Pdgraph.cp[2Pcp[2Pc[10Plogoemacs hw7client.cplogoutemacs dgraph.cp[2Pcp[2Pchw7client.cp[5Pdgraphhw7client.cp[3Pdgraph.c[1Pllist.cpdgraph.c[10Plogo[Kg++ dgraph.cpp[[[[[[[[[[[Kstack.cpp llist.cpp slist.cpp dgraph.cpp hw7client.cpp
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW7[berte005@empress forHW7]$ ./a.out
+------------------------------
+A 2 0 [ B F ]
+B 2 0 [ C G ]
+C 1 0 [ H ]
+D 0 0 [empty]
+E 0 0 [empty]
+F 2 0 [ I E ]
+G 0 0 [empty]
+H 2 0 [ G I ]
+I 3 0 [ A G E ]
+Removed A from stack
+Visit A as 2
+...pushing [ B F ]
+The Stack is now: 
+B
+F
+--------------
+Removed B from stack
+Visit B as 3
+...pushing [ C G ]
+The Stack is now: 
+C
+G
+F
+--------------
+Removed C from stack
+Visit C as 4
+...pushing [ H ]
+The Stack is now: 
+H
+G
+F
+--------------
+Removed H from stack
+Visit H as 5
+...pushing [ G I ]
+The Stack is now: 
+G
+I
+G
+F
+--------------
+Removed G from stack
+Visit G as 6
+Deadend reached – backup
+The Stack is now: 
+I
+G
+F
+--------------
+Removed I from stack
+Visit I as 7
+...pushing [ A G E ]
+The Stack is now: 
+A
+G
+E
+G
+F
+--------------
+Removed A from stack
+A has been visited already - backup
+The Stack is now: 
+G
+E
+G
+F
+--------------
+Removed G from stack
+G has been visited already - backup
+The Stack is now: 
+E
+G
+F
+--------------
+Removed E from stack
+Visit E as 8
+Deadend reached – backup
+The Stack is now: 
+G
+F
+--------------
+Removed G from stack
+G has been visited already - backup
+The Stack is now: 
+F
+--------------
+Removed F from stack
+Visit F as 9
+...pushing [ I E ]
+The Stack is now: 
+I
+E
+--------------
+Removed I from stack
+I has been visited already - backup
+The Stack is now: 
+E
+--------------
+Removed E from stack
+E has been visited already - backup
+The Stack is now: 
+[ empty ]
+--------------
+
+The Final Graph is: 
+------------------------------
+A 2 1 [ B F ]
+B 2 2 [ C G ]
+C 1 3 [ H ]
+D 0 0 [empty]
+E 0 7 [empty]
+F 2 8 [ I E ]
+G 0 5 [empty]
+H 2 4 [ G I ]
+I 3 6 [ A G E ]
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW7[berte005@empress forHW7]$ exit
+exit
+
+Script done on Fri 19 Apr 2019 10:24:40 PM PDT

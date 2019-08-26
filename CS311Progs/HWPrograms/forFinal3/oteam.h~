@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+#include <fstream>
+using namespace std;
+
+const int SIZE = 55;
+
+//typedef int elem_t;
+
+
+struct elem_t //each oteamer
+{
+  string firstName;
+  string lastName;
+  string major;
+  char position; //D = Director/Co-Director , L = Leader, O = Oteamer
+  string email;
+  long phoneNum;
+
+  //bool returner; //true = returning Oteamer, false = first time oteamer
+}; 
+
+
+class OrientationTeam
+{  
+ public:
+  
+  OrientationTeam();  // intializes Root
+  ~OrientationTeam();  // destructor calls dtraverse to destroy the dynamic tree
+

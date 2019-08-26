@@ -1,0 +1,49 @@
+Script started on Fri 08 Mar 2019 09:19:03 PM PST
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW3[?1034h[berte005@empress forHW3]$ logo./a.oug++ HW3P2client.cpp slist.cpp llist.cpp[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[26Pemacs slist.g++ HW3P2client.cpp slist.cpp llist.cpp
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW3[berte005@empress forHW3]$ ./a.out
+calling the llist constructor
+in slist constructor
+Step 1
+Step 2
+Step 3
+[ 4 6 7 8 ]
+Step 4
+Found 6 in location 2
+Step 5
+Step 6
+[ 4 0 7 8 ]
+Step 7
+Found 8 in location 4
+Step 8
+Step 9
+[ 4 0 7 2 ]
+Step 10
+Element not found
+Step 11
+ERROR: Bad position was given
+calling the llist destructor
+destructor function finished...
+
+---- First Part testing done ----- 
+
+calling the llist constructor
+in slist constructor
+calling the llist constructor
+in slist constructor
+
+true
+false
+false
+true
+false
+false
+false
+
+calling the llist destructor
+destructor function finished...
+calling the llist destructor
+destructor function finished...
+]0;berte005@empress:~/CS311Progs/HWPrograms/forHW3[berte005@empress forHW3]$ exit
+exit
+
+Script done on Fri 08 Mar 2019 09:19:18 PM PST

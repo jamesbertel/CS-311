@@ -1,0 +1,178 @@
+// CS311 Yoshii - HW5 Priority Queue Implementation File
+// Complete all ** parts and give good comments
+
+// =================================================
+// HW5 Priority Printer Queue 
+// YOUR NAME: James Bertel
+// File Type: implementation pqueue.cpp
+// =================================================
+#include "pqueue.h"
+
+// constructor
+pqueue::pqueue() {  count = 0;  /* no jobs yet */ }
+
+// destructor does nothing
+pqueue::~pqueue() {}
+
+// Purpose: to add a job to a right place in the Pqueue
+// Argument: j is the job priority number
+void pqueue::insertjob(Oteam j)
+{
+  // ** add the job j at the rear (update count)
+  cout << "Adding: " << j.firstName << endl;
+  Q[count] = j;
+  count++;
+  trickleup(); // moves the job to the right place
+}
+
+// Purpose: to print a job and reheapify the Pqueue
+void pqueue::printjob()
+{
+  cout << "printing: " << Q[0].firstName <<endl;
+  reheapify(); 
+}
+
+// Purpose: to display all jobs
+void pqueue::displayAll()
+{ cout << "Jobs: " << endl;
+  // ** loop to display jobs from slot 0 to slot count-1 horizontally. 
+  //No need to show a tree format.
+
+  for(int i = 0; i < count; i++)
+    {
+      cout << setw(15) << Q[i].firstName;
+      cout << setw(15) << Q[i].lastName;
+      cout << setw(6) << Q[i].major;
+      cout << setw(3) << Q[i].position;
+      cout << setw(10) << Q[i].email;
+      cout << setw(15) << Q[i].phonenum << endl;
+    }      
+  cout << endl;
+} 
+
+// Utility functions follow: ------------------
+
+
+// Purpose: to make the very last job trickle up to the right location 
+void pqueue::trickleup()
+{ 
+  int x = count-1;  // the very last job location
+  // ** while x is > 0
+  // compare Q[x] with the parent and if the parent is bigger swap & update x to be the parent . Otherwise stop.
+  //  You can call getParent to get the location of the parent
+
+  int parent;
+
+  while(x > 0)
+    {
+      parent = getParent(x);
+
+      if(Q[parent].phonenum > Q[x].phonenum)
+	{
+	  Oteam temp = Q[parent];
+	  Q[parent] = Q[x];
+	  Q[x] = temp;
+	}
+      else return;
+    }
+}
+
+// Purpose: find the location of the parent 
+// The child location is given.  Need to call even.
+int pqueue::getParent(int child)
+{  // ** return the parent location based on the child loc
+  if(even(child)) return (child/2)-1;
+  else return (child-1)/2;
+}
+
+// Purpose: is location i even? Important in finding its parent location
+bool pqueue::even(int i)
+{  if ((i % 2) ==  0) return true; else return false; }
+
+// Purpose: to reheapify the Pqueue after printing \\
+//          makes the tree have the heap property again
+//          after removing the root
+void pqueue::reheapify()
+{ 
+  Q[0] = Q[count-1];  // move the last job to the front
+  count--;
+  // ** start X at the root and repeat the following:
+  // Find the location of the smaller child if the child is  // not off the tree yet
+  // If the smaller child is smaller than the parent, swap
+  //     and X becomes the smaller child
+  // else stop to loop
+  //displayAll();
+  
+  for(int x = 0; x < count-1; x++) //***** should be while loop
+    {
+      int child = getSmallerchild(x); //smaller child of x
+
+      //cout << "\n\t" << child << ": " << Q[child] << endl;
+      //cout << "\tif " << Q[child] << " < " << Q[x] << endl;
+      
+      if(child == -1)
+	{//cout << "\t\tXOUT\n";return;
+	  return;
+	}
+      else if( Q[child].phonenum < Q[x].phonenum )
+	{ Oteam temp = Q[x];
+	  //cout << "\tTEMP X "<<temp << " " <<Q[x]<<endl;
+	  Q[x] = Q[child];
+	  //cout << "\tX CH "<<Q[x] << " " <<Q[child]<<endl;
+	  //cout << "\tTEMP: " << temp << endl;
+	  Q[child] = temp;
+	  //cout << "\t\tthey've been swapped(CH X): " << Q[child] << " " << Q[x] << endl;
+	}
+      //      else return;
+      //cout << endl;displayAll();cout << endl;
+      
+      //x++;
+    }
+  //count--;
+}
+
+// Purpose: to find the location of the smaller child
+// where children at locations 2*i+1 and 2*i+2
+int pqueue::getSmallerchild(int i)
+{// ** return the location of the smaller child 
+
+  int left = 2*i+1;
+  int right = 2*i+2;
+
+  //cout << "\t\tfor " << i << ": " << left << " and " << right << endl;
+  //cout << "\t\tfor " << Q[i] << ": " << Q[left] << " and " << Q[right] << endl;
+
+  if ( left >= count && right >= count )
+    return -1;
+  else if(right >= count)
+    return left;
+  else if(left >= count)
+    return right;
+  else if ( Q[left].phonenum < Q[right].phonenum ) 
+    return left;
+  else //Q[left] > Q[right] 
+    return right;
+}
+
+void pqueue::loadQ()
+{
+  ifstream fin;
+  fin.open("oteam.txt");
+
+  Oteam Oteamer;
+
+  while(fin)
+    {
+      fin >> Oteamer.firstName;
+      cout << Oteamer.firstName << endl;
+      fin >> Oteamer.lastName;
+      fin >> Oteamer.major;
+      fin >> Oteamer.position;
+      fin >> Oteamer.email;
+      fin >> Oteamer.phonenum;
+
+      insertjob(Oteamer);
+      //count++;
+    }
+  fin.close();
+}
